@@ -1,0 +1,200 @@
+
+# ==========================================
+# FOOTBALL ENGINE - GITIGNORE
+# ==========================================
+
+# ------------------------------------------
+# 1. Environment variables and secrets
+# ------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials.json
+
+# ------------------------------------------
+# 2. Python virtual environments
+# ------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# ------------------------------------------
+# 3. Python cache and compiled files
+# ------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+*.egg
+*.egg-info/
+.Python
+build/
+dist/
+
+# ------------------------------------------
+# 4. Football datasets
+# ------------------------------------------
+datasets/
+dataset/
+data/raw/
+data/processed/
+data/interim/
+
+# Dataset archives
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+
+# Annotation exports and large data
+*.parquet
+*.tfrecord
+*.jsonl
+
+# ------------------------------------------
+# 5. Football videos and extracted frames
+# ------------------------------------------
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.mpeg
+*.mpg
+
+# Extracted frames
+frames/
+extracted_frames/
+video_frames/
+
+# Large image datasets
+# Keep individual project assets selectively if needed.
+# Do not globally ignore *.jpg or *.png.
+
+# ------------------------------------------
+# 6. YOLO / Ultralytics
+# ------------------------------------------
+runs/
+runs/detect/
+runs/train/
+runs/segment/
+runs/pose/
+runs/classify/
+
+# ------------------------------------------
+# 7. Model weights and checkpoints
+# ------------------------------------------
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.engine
+*.trt
+*.safetensors
+*.h5
+*.hdf5
+*.pb
+*.tflite
+*.weights
+
+weights/
+checkpoints/
+models/checkpoints/
+models/saved/
+models/trained/
+
+# ------------------------------------------
+# 8. Training and experiment outputs
+# ------------------------------------------
+outputs/
+artifacts/
+experiments/
+lightning_logs/
+mlruns/
+wandb/
+tensorboard/
+tb_logs/
+logs/
+
+*.log
+*.out
+
+# ------------------------------------------
+# 9. Prediction and inference outputs
+# ------------------------------------------
+predictions/
+inference_outputs/
+detection_results/
+tracking_results/
+heatmap_outputs/
+generated_heatmaps/
+
+# ------------------------------------------
+# 10. OpenCV and computer vision cache
+# ------------------------------------------
+.cache/
+cache/
+.tmp/
+temp/
+*.tmp
+
+# ------------------------------------------
+# 11. Jupyter notebooks
+# ------------------------------------------
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Keep notebooks themselves tracked.
+
+# ------------------------------------------
+# 12. Testing and code quality
+# ------------------------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+
+# ------------------------------------------
+# 13. IDE settings
+# ------------------------------------------
+.idea/
+.vscode/
+*.iml
+
+# ------------------------------------------
+# 14. Windows / Linux / macOS
+# ------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.swp
+*.swo
+
+# ------------------------------------------
+# 15. Database and local runtime files
+# ------------------------------------------
+*.sqlite
+*.sqlite3
+*.db
+*.pid
+
+# ------------------------------------------
+# 16. Frontend dependencies (if applicable)
+# ------------------------------------------
+node_modules/
+.next/
+.nuxt/
+.parcel-cache/
